@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    default="build"
+    basedir="."
+    name="symfony-biga-edition"
+    description="Useful build tools for checking the quality of the code.">
+
+    <property name="project.build_dir" value="${project.basedir}/build" />
+    <property name="project.build_log_dir" value="${project.basedir}/build/log" />
+
+    <import file="${project.build_dir}/build.xml" />
+
+    <target name="update" description="Update build scripts.">
+        <property name="base_url" value="https://raw.github.com/JoshuaEstes/symfony-biga-edition/master/build" />
+        <httpget url="${base_url}/build.xml" dir="${project.build_dir}" />
+    </target>
+</project>
