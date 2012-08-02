@@ -14,7 +14,22 @@ Features
   way you want and can deploy to any server you want.
 * Commands - Symfony commands to allow you to configure the framework.
 * Developer Tools - to allow you to setup vhosts and configure other neat
-  things
+  things.
+
+Requirements
+------------
+
+To take advantage of all the features biga has to offer, you will need to make
+sure you have all of these installed on your machine and setup properly.
+
+* phing (http://phing.info)
+* phpunit
+* phpmd
+* phploc
+* pdepend
+* phpdcd
+* phpcs
+* phpcpd
 
 Installation
 ============
@@ -22,4 +37,32 @@ Installation
     curl -s https://getcomposer.org/installer | php
     php composer.phar create-project joshuaestes/symfony-biga-framework
     php app/console init:project
+
+Build
+=====
+
+Running a build will test your code and give you statistics on it. Phing is
+required and you can always update the build scripts be running the "update"
+task. Example:
+
+    phing update
+
+To test your code and to get statistics on it, just run phing.
+
+Commands
+========
+
+Biga comes with a few commands that are used to help get you up and running as
+fast as possible so you can get to programming.
+
+* init:project - Takes care of the boring stuff such as setting up your
+  parameters.yml file.
+* apache:vhost:create - Creates an apache vhost file for you.
+* apache:restart - Restart apache
+* hosts:create - Add an entry into your hosts file
+* configure:database - Allows you to update your database settings in the
+  parameters.yml file.
+* configure:mailer - Configure the mailer section in your parameters.yml
+  file.
+* generate:controller - Generate a controller
 
