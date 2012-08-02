@@ -1,5 +1,5 @@
 <project>
     <target
         name="build"
-        depends="" />
+        depends="clean,prepare" />
 </project>

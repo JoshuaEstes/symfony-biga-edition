@@ -6,12 +6,26 @@
     description="Useful build tools for checking the quality of the code.">
 
     <property name="project.build_dir" value="${project.basedir}/build" />
-    <property name="project.build_log_dir" value="${project.basedir}/build/log" />
 
     <import file="${project.build_dir}/build.xml" />
+    <import file="${project.build_dir}/clean.xml" />
+    <import file="${project.build_dir}/prepare.xml" />
 
+    <!--
+        This will download new versions of the build scripts into the build_dir.
+        This file just imports them
+    -->
     <target name="update" description="Update build scripts.">
         <property name="base_url" value="https://raw.github.com/JoshuaEstes/symfony-biga-edition/master/build" />
         <httpget url="${base_url}/build.xml" dir="${project.build_dir}" />
+        <httpget url="${base_url}/clean.xml" dir="${project.build_dir}" />
+        <httpget url="${base_url}/lint.xml" dir="${project.build_dir}" />
+        <httpget url="${base_url}/pdepend.xml" dir="${project.build_dir}" />
+        <httpget url="${base_url}/phpcpd.xml" dir="${project.build_dir}" />
+        <httpget url="${base_url}/phpcs.xml" dir="${project.build_dir}" />
+        <httpget url="${base_url}/phpdcd.xml" dir="${project.build_dir}" />
+        <httpget url="${base_url}/phploc.xml" dir="${project.build_dir}" />
+        <httpget url="${base_url}/phpmd.xml" dir="${project.build_dir}" />
+        <httpget url="${base_url}/prepare.xml" dir="${project.build_dir}" />
     </target>
 </project>

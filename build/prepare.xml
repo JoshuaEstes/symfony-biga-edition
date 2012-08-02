@@ -1,0 +1,5 @@
+<project>
+    <target name="prepare" description="Prepare for the build.">
+        <mkdir dir="${project.build_dir}/api" />
+    </target>
+</project>

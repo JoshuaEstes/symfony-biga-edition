@@ -5,4 +5,4 @@ app/logs/*
 vendor
 composer.phar
 
-
+build/api
