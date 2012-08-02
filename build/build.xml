@@ -1,0 +1,5 @@
+<project>
+    <target
+        name="build"
+        depends="" />
+</project>
