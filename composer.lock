@@ -64,8 +64,8 @@
         {
             "package": "joshuaestes/biga-framework-bundle",
             "version": "dev-master",
-            "source-reference": "84fdb10739766366fe6d79d0fe2e49ed6fd1bde3",
-            "commit-date": "1343871063"
+            "source-reference": "db396ff311488a6ee73d3d53e88807c0268ad631",
+            "commit-date": "1343934590"
         },
         {
             "package": "kriswallsmith/assetic",
@@ -112,12 +112,6 @@
             "version": "dev-master",
             "source-reference": "8b2aa953f87da228ba413e8fb1372e49c1374050",
             "commit-date": "1342198037"
-        },
-        {
-            "package": "symfony/assetic-bundle",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
         },
         {
             "package": "symfony/assetic-bundle",
