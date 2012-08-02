@@ -15,9 +15,14 @@ Features
 * Commands - Symfony commands to allow you to configure the framework.
 * Developer Tools - to allow you to setup vhosts and configure other neat
   things.
+* Yui Compressor - Comes with yui already bundled in so you don't have to
+  set it up and configure it.
+* Optimized - Biga comes already optimized to use symfony's extra functionality
+  such as ESI.
+* Error Pages - Already moved for you to manage and edit.
 
-Requirements
-------------
+Optional Tools
+--------------
 
 To take advantage of all the features biga has to offer, you will need to make
 sure you have all of these installed on your machine and setup properly.
@@ -64,5 +69,7 @@ fast as possible so you can get to programming.
   parameters.yml file.
 * configure:mailer - Configure the mailer section in your parameters.yml
   file.
-* generate:controller - Generate a controller
+* generate:controller - Generate a controller skeleton
+* generate:command - Generate a command skeleton
+* varnish:purge - Purge your varnish cache
 
