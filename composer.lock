@@ -64,8 +64,8 @@
         {
             "package": "joshuaestes/biga-framework-bundle",
             "version": "dev-master",
-            "source-reference": "fc3f34a45e596b19726e0a4c6473e2495a409fcf",
-            "commit-date": "1343944827"
+            "source-reference": "004177964c1b80942f72c08c00a79c0803c17a8b",
+            "commit-date": "1344002120"
         },
         {
             "package": "kriswallsmith/assetic",
@@ -86,8 +86,8 @@
         {
             "package": "sensio/distribution-bundle",
             "version": "dev-master",
-            "source-reference": "5886adae1613c0a72fbb95259a83ae798e86c0d3",
-            "commit-date": "1342347850"
+            "source-reference": "26a1165b8cfbde91bf01d809f87bc286f18f0963",
+            "commit-date": "1343979103"
         },
         {
             "package": "sensio/framework-extra-bundle",
@@ -98,8 +98,14 @@
         {
             "package": "sensio/generator-bundle",
             "version": "dev-master",
-            "source-reference": "4436c2e24301123fb413baf3f78cd93bbc016c07",
-            "commit-date": "1343291371"
+            "alias-pretty-version": "2.1.x-dev",
+            "alias-version": "2.1.9999999.9999999-dev"
+        },
+        {
+            "package": "sensio/generator-bundle",
+            "version": "dev-master",
+            "source-reference": "d8fc1666f3cdb403f1b2d4320c45ddd6adbdf6a5",
+            "commit-date": "1343980150"
         },
         {
             "package": "swiftmailer/swiftmailer",
@@ -110,8 +116,8 @@
         {
             "package": "swiftmailer/swiftmailer",
             "version": "dev-master",
-            "source-reference": "8b2aa953f87da228ba413e8fb1372e49c1374050",
-            "commit-date": "1342198037"
+            "source-reference": "19045c3692f6f6ddb4abc5ebfaf3f86f1c57d265",
+            "commit-date": "1343980916"
         },
         {
             "package": "symfony/assetic-bundle",
@@ -140,8 +146,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "b1618d210cb7e27036edcea9c163a94167e7df59",
-            "commit-date": "1343747192"
+            "source-reference": "be41ca353b8b69148d7993e3d7006733ff8dfff7",
+            "commit-date": "1343998124"
         },
         {
             "package": "twig/extensions",
