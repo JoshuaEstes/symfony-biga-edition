@@ -28,13 +28,13 @@ To take advantage of all the features biga has to offer, you will need to make
 sure you have all of these installed on your machine and setup properly.
 
 * phing (http://phing.info)
-* phpunit
-* phpmd
-* phploc
-* pdepend
-* phpdcd
-* phpcs
-* phpcpd
+* phpunit (http://phpunit.de)
+* phpmd (http://phpmd.org)
+* phploc (http://sebastianbergmann.github.com/phploc)
+* pdepend (http://pdepend.org)
+* phpdcd (https://github.com/sebastianbergmann/phpdcd)
+* phpcs (http://pear.php.net/package/PHP_CodeSniffer)
+* phpcpd (https://github.com/sebastianbergmann/phpcpd)
 
 Installation
 ============
