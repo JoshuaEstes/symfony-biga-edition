@@ -64,8 +64,8 @@
         {
             "package": "joshuaestes/biga-framework-bundle",
             "version": "dev-master",
-            "source-reference": "004177964c1b80942f72c08c00a79c0803c17a8b",
-            "commit-date": "1344002120"
+            "source-reference": "0269871bf1e10bca0a7624ae14b6a1d77000c49b",
+            "commit-date": "1344009183"
         },
         {
             "package": "kriswallsmith/assetic",
@@ -94,12 +94,6 @@
             "version": "dev-master",
             "source-reference": "dbe4432742e16ee9ca550a2f953b059f0a80c53d",
             "commit-date": "1343637454"
-        },
-        {
-            "package": "sensio/generator-bundle",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
         },
         {
             "package": "sensio/generator-bundle",
