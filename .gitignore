@@ -1,9 +1,11 @@
 web/bundles/
 app/bootstrap.php.cache
 app/cache/*
-app/config/parameters.yml
 app/logs/*
 vendor
 composer.phar
-
 build/api
+####
+# So you can ignore this file or not, if you run project init
+# and are using git, then it will ignore updates to this file
+#app/config/parameters.yml
