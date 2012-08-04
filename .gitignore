@@ -4,8 +4,24 @@ app/cache/*
 app/logs/*
 vendor
 composer.phar
-build/api
+build/api/
+build/logs/
+build/pdepend/
+
 ####
 # So you can ignore this file or not, if you run project init
 # and are using git, then it will ignore updates to this file
 #app/config/parameters.yml
+
+####
+# This will ignore the files that the assetic bundle will dump
+# into these directories. If there are files in those directories
+# that you would like to keep in your repo, add them below and
+# prefix them with !. See the commented examples below.
+web/css/
+web/js/
+
+# This is how you would include a file in the repo
+#!web/css/main.css
+#!web/js/main.js
+
