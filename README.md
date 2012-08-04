@@ -41,6 +41,7 @@ Installation
 
     curl -s https://getcomposer.org/installer | php
     php composer.phar create-project joshuaestes/symfony-biga-edition /path/to/installation
+    cd /path/to/installation
     php app/console init:project
 
 Build
