@@ -1,0 +1,25 @@
+####
+#
+# Framework configuration
+#
+# Reference: http://symfony.com/doc/current/reference/configuration/framework.html
+#
+framework:
+    #esi:             ~
+    translator:      { fallback: %locale% }
+    secret:          %secret%
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: %kernel.debug%
+    form:            true
+    csrf_protection: true
+    validation:      { enable_annotations: true }
+    templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
+    default_locale:  %locale%
+    trust_proxy_headers: false # Should Request object should trust proxy headers (X_FORWARDED_FOR/HTTP_CLIENT_IP)
+    session:
+        # You can replace "native_file" with any one of these options:
+        # memcache, memcached, mongo_db, native, null, pdo 
+        handler_id: session.handler.native_file
+
+

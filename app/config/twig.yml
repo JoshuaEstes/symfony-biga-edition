@@ -1,0 +1,10 @@
+####
+#
+# Twig Configuration Settings
+#
+# http://symfony.com/doc/current/reference/configuration/twig.html
+#
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+
