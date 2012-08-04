@@ -1,0 +1,13 @@
+<project>
+    <target name="phpmd" description="">
+        <exec executable="phpmd" passthru="true">
+            <arg path="${project.basedir}" />
+            <arg value="xml" />
+            <arg value="${project.build_dir}/rulesets/phpmd.xml" />
+            <arg value="--reportfile" />
+            <arg value="${project.build_dir}/logs/pmd.xml" />
+            <arg value="--exclude" />
+            <arg value="${project.basedir}/app/AppKernel.php,${project.basedir}/app/SymfonyRequirements.php,${project.basedir}/app/cache,${project.basedir}/app/log,${project.basedir}/src/**/Test/**,${project.basedir}/vendor,${project.basedir}/web/bundles" />
+        </exec>
+    </target>
+</project>

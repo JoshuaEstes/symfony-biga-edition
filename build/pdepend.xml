@@ -1,0 +1,12 @@
+<project>
+    <target name="pdepend" description="">
+        <exec executable="pdepend" passthru="true">
+            <arg value="--jdepend-xml=${project.build_dir}/logs/jdepend.xml" />
+            <arg value="--jdepend-chart=${project.build_dir}/pdepend/dependencies.svg" />
+            <arg value="--overview-pyramid=${project.build_dir}/pdepend/overview-pyramid.svg" />
+            <arg value="--summary-xml=${project.build_dir}/logs/jdepend-summary.xml" />
+            <arg value="--ignore=${project.basedir}/app/cache,${project.basedir}/app/log,${project.basedir}/vendor,${project.basedir}/web/bundles" />
+            <arg value="${project.basedir}" />
+        </exec>
+    </target>
+</project>

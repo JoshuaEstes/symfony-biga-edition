@@ -1,5 +1,6 @@
 <project>
     <target name="clean" description="Cleans up the build directory.">
         <delete dir="${project.build_dir}/api" />
+        <delete dir="${project.build_dir}/logs" />
     </target>
 </project>

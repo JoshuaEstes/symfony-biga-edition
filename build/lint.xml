@@ -1,0 +1,36 @@
+<project>
+    <target name="lint" description="Preform lint checking on php and twig files">
+        <foreach param="file" absparam="php-file" target="lint-php">
+            <fileset dir="${project.basedir}/app">
+                <include name="**/*.php" />
+                <exclude name="**/cache/**" />
+            </fileset>
+            <fileset dir="${project.basedir}/src">
+                <include name="**/*.php" />
+                <exclude name="**/Test/**" />
+            </fileset>
+        </foreach>
+        <foreach param="file" absparam="twig-file" target="lint-twig">
+            <fileset dir="${project.basedir}/app/Resources">
+                <include name="**/*.twig" />
+            </fileset>
+            <fileset dir="${project.basedir}/src">
+                <include name="**/*.twig" />
+            </fileset>
+        </foreach>
+    </target>
+
+    <target name="lint-php" description="Run php lint checker">
+        <exec executable="php" passthru="true" checkreturn="true">
+            <arg value="-l"/>
+            <arg value="${php-file}" />
+        </exec>
+    </target>
+
+    <target name="lint-twig" description="Check twig syntax">
+        <exec executable="${project.basedir}/app/console" passthru="true" checkreturn="true">
+            <arg value="twig:lint"/>
+            <arg value="${twig-file}" />
+        </exec>
+    </target>
+</project>

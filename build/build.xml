@@ -1,5 +1,6 @@
 <project>
     <target
         name="build"
-        depends="clean,prepare" />
+        description="Check your code and get some statistics."
+        depends="clean,prepare,lint,phploc,pdepend" />
 </project>
