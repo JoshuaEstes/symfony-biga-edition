@@ -73,3 +73,13 @@ fast as possible so you can get to programming.
 * generate:command - Generate a command skeleton
 * varnish:purge - Purge your varnish cache
 
+Bundles
+=======
+
+Biga comes with a few extra bundles already installed.
+
+* BigaFrameworkBundle (https://github.com/JoshuaEstes/biga-framework-bundle)
+* DoctrineMigrationsBundle (https://github.com/doctrine/DoctrineMigrationsBundle)
+* DoctrineFixturesBundle (https://github.com/doctrine/DoctrineFixturesBundle)
+
+
