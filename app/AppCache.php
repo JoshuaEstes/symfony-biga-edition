@@ -6,4 +6,20 @@ use Symfony\Bundle\FrameworkBundle\HttpCache\HttpCache;
 
 class AppCache extends HttpCache
 {
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function getOptions()
+    {
+        return array(
+            'debug'                  => $this->kernel->isDebug(),
+            'default_ttl'            => 0,
+            'private_headers'        => array('Authorization', 'Cookie'),
+            'allow_reload'           => false,
+            'allow_revalidate'       => false,
+            'stale_while_revalidate' => 2,
+            'stale_if_error'         => 60,
+        );
+    }
 }

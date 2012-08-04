@@ -5,7 +5,9 @@
 # Reference: http://symfony.com/doc/current/reference/configuration/framework.html
 #
 framework:
-    #esi:             ~
+    # If you are going to use ESI, you will need to enable it here
+    # You will also need to uncomment _internal in routing.yml
+    esi: { enabled: false }
     translator:      { fallback: %locale% }
     secret:          %secret%
     router:
