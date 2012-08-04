@@ -1,11 +1,17 @@
 {
-    "hash": "2af51bbc5ed5780fd6a88128426071ba",
+    "hash": "655e488e0e7e0d14db39c40552c1a552",
     "packages": [
         {
             "package": "doctrine/common",
             "version": "2.3.x-dev",
             "source-reference": "2ec4bc6db13db6a0976a16b71058083c55cbcdbd",
             "commit-date": "1343847076"
+        },
+        {
+            "package": "doctrine/data-fixtures",
+            "version": "dev-master",
+            "source-reference": "779c3dfe446b6da893be87b908d6be28345d1e01",
+            "commit-date": "1341780535"
         },
         {
             "package": "doctrine/dbal",
@@ -16,8 +22,32 @@
         {
             "package": "doctrine/doctrine-bundle",
             "version": "dev-master",
+            "alias-pretty-version": "1.0.x-dev",
+            "alias-version": "1.0.9999999.9999999-dev"
+        },
+        {
+            "package": "doctrine/doctrine-bundle",
+            "version": "dev-master",
             "source-reference": "ed8d02b491512f947fdb2f8b665dc8fd72b5879c",
             "commit-date": "1343657020"
+        },
+        {
+            "package": "doctrine/doctrine-fixtures-bundle",
+            "version": "dev-master",
+            "source-reference": "a5103a71bcd9b2f851ca6c16519a077784a3184a",
+            "commit-date": "1341472847"
+        },
+        {
+            "package": "doctrine/doctrine-migrations-bundle",
+            "version": "dev-master",
+            "source-reference": "3792aa78445773387754c6853bbd7f4dcb31f486",
+            "commit-date": "1341472972"
+        },
+        {
+            "package": "doctrine/migrations",
+            "version": "dev-master",
+            "source-reference": "b86b4cc0a39714f0aa53b908d495beacfa0e4011",
+            "commit-date": "1343202693"
         },
         {
             "package": "doctrine/orm",
@@ -94,12 +124,6 @@
             "version": "dev-master",
             "source-reference": "dbe4432742e16ee9ca550a2f953b059f0a80c53d",
             "commit-date": "1343637454"
-        },
-        {
-            "package": "sensio/generator-bundle",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
         },
         {
             "package": "sensio/generator-bundle",
@@ -182,6 +206,8 @@
         "sensio/distribution-bundle": 20,
         "sensio/framework-extra-bundle": 20,
         "sensio/generator-bundle": 20,
-        "joshuaestes/biga-framework-bundle": 20
+        "joshuaestes/biga-framework-bundle": 20,
+        "doctrine/doctrine-migrations-bundle": 20,
+        "doctrine/doctrine-fixtures-bundle": 20
     }
 }
