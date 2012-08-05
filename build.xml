@@ -14,9 +14,9 @@
     <import file="${project.build_dir}/phploc.xml" />
     <import file="${project.build_dir}/pdepend.xml" />
     <import file="${project.build_dir}/phpmd.xml" />
+    <import file="${project.build_dir}/phpcpd.xml" />
     <!--
     <import file="${project.build_dir}/phpcs.xml" />
-    <import file="${project.build_dir}/phpcpd.xml" />
     <import file="${project.build_dir}/phpunit.xml" />
     -->
     <!--
