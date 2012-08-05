@@ -1,0 +1,15 @@
+<project>
+    <target name="phpcpd" description="">
+        <exec executable="phpcpd" passthru="true">
+            <arg value="--log-pmd" />
+            <arg value="${project.build_dir}/logs/pmd-cpd.xml" />
+            <arg value="--exclude" />
+            <arg value="${project.basedir}/app/cache" />
+            <arg value="--exclude" />
+            <arg value="${project.basedir}/app/log" />
+            <arg value="--exclude" />
+            <arg value="${project.basedir}/vendor" />
+            <arg value="${project.basedir}" />
+        </exec>
+    </target>
+</project>
