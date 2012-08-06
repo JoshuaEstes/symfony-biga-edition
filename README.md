@@ -30,11 +30,12 @@ sure you have all of these installed on your machine and setup properly.
 * phing (http://phing.info)
 * phpunit (http://phpunit.de)
 * phpmd (http://phpmd.org)
-* phploc (http://sebastianbergmann.github.com/phploc)
+* phploc (https://github.com/sebastianbergmann/phploc)
 * pdepend (http://pdepend.org)
 * phpdcd (https://github.com/sebastianbergmann/phpdcd)
 * phpcs (http://pear.php.net/package/PHP_CodeSniffer)
 * phpcpd (https://github.com/sebastianbergmann/phpcpd)
+* phpdcd (https://github.com/sebastianbergmann/phpdcd)
 
 Installation
 ============
@@ -82,5 +83,4 @@ Biga comes with a few extra bundles already installed.
 * BigaFrameworkBundle (https://github.com/JoshuaEstes/biga-framework-bundle)
 * DoctrineMigrationsBundle (https://github.com/doctrine/DoctrineMigrationsBundle)
 * DoctrineFixturesBundle (https://github.com/doctrine/DoctrineFixturesBundle)
-
 
