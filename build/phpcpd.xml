@@ -1,5 +1,5 @@
 <project>
-    <target name="phpcpd" description="">
+    <target name="phpcpd" description="PHP Copy/Paste Detector">
         <exec executable="phpcpd" passthru="true">
             <arg value="--log-pmd" />
             <arg value="${project.build_dir}/logs/pmd-cpd.xml" />

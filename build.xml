@@ -7,6 +7,10 @@
 
     <property name="project.build_dir" value="${project.basedir}/build" />
 
+    <!--
+         See the files for more details on what each one does. Most
+         are named after their respective commands.
+    -->
     <import file="${project.build_dir}/build.xml" />
     <import file="${project.build_dir}/clean.xml" />
     <import file="${project.build_dir}/prepare.xml" />
@@ -15,10 +19,10 @@
     <import file="${project.build_dir}/pdepend.xml" />
     <import file="${project.build_dir}/phpmd.xml" />
     <import file="${project.build_dir}/phpcpd.xml" />
-    <!--
-    <import file="${project.build_dir}/phpcs.xml" />
+    <import file="${project.build_dir}/phpdcd.xml" />
     <import file="${project.build_dir}/phpunit.xml" />
-    -->
+    <import file="${project.build_dir}/phpcs.xml" />
+
     <!--
         This will download new versions of the build scripts into the build_dir.
         This file just imports them

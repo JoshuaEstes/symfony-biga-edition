@@ -1,0 +1,8 @@
+<project>
+    <target name="phpunit" description="PHPUnit">
+        <exec executable="phpunit" passthru="true" checkreturn="true">
+            <arg value="-c" />
+            <arg value="app/" />
+        </exec>
+    </target>
+</project>

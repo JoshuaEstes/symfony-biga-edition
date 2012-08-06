@@ -1,4 +1,7 @@
 <project>
+    <!--
+         Runs lint checking on php and twig files
+    -->
     <target name="lint" description="Preform lint checking on php and twig files">
         <foreach param="file" absparam="php-file" target="lint-php">
             <fileset dir="${project.basedir}/app">
@@ -21,16 +24,32 @@
     </target>
 
     <target name="lint-php" description="Run php lint checker">
-        <exec executable="php" passthru="true" checkreturn="true">
-            <arg value="-l"/>
-            <arg value="${php-file}" />
-        </exec>
+        <if>
+            <isset property="php-file" />
+            <then>
+                <exec executable="php" passthru="true" checkreturn="true">
+                    <arg value="-l"/>
+                    <arg value="${php-file}" />
+                </exec>
+            </then>
+            <else>
+                <fail message="Please run phint lint instead" />
+            </else>
+        </if>
     </target>
 
     <target name="lint-twig" description="Check twig syntax">
-        <exec executable="${project.basedir}/app/console" passthru="true" checkreturn="true">
-            <arg value="twig:lint"/>
-            <arg value="${twig-file}" />
-        </exec>
+        <if>
+            <isset property="twig-file" />
+            <then>
+                <exec executable="${project.basedir}/app/console" passthru="true" checkreturn="true">
+                    <arg value="twig:lint"/>
+                    <arg value="${twig-file}" />
+                </exec>
+            </then>
+            <else>
+                <fail message="Please run phint lint instead" />
+            </else>
+        </if>
     </target>
 </project>

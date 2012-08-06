@@ -1,0 +1,9 @@
+<project>
+    <target name="phpdcd" description="PHP Dead Code Detector">
+        <exec executable="phpdcd" passthru="true" checkreturn="true">
+            <arg value="--exclude" />
+            <arg value="${project.basedir}/app/SymfonyRequirements.php,${project.build_dir},${project.basedir}/app/cache,${project.basedir}/app/log,${project.basedir}/src/**/Test/**,${project.basedir}/vendor,${project.basedir}/web/bundles" />
+            <arg value="${project.basedir}" />
+        </exec>
+    </target>
+</project>

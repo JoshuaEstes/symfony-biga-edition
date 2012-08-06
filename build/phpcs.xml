@@ -1,0 +1,10 @@
+<project>
+    <target name="phpcs" description="PHP_CodeSniffer">
+        <exec executable="phpcs" passthru="true">
+            <arg value="--report=checkstyle" />
+            <arg value="--report-file=${project.build_dir}/logs/checkstyle.xml" />
+            <arg value="--ignore=${project.basedir}/app/cache,${project.basedir}/app/log,${project.basedir}/vendor,${project.basedir}/web/bundles" />
+            <arg path="${project.basedir}" />
+        </exec>
+    </target>
+</project>

@@ -1,5 +1,5 @@
 <project>
-    <target name="phpmd" description="">
+    <target name="phpmd" description="PHP Mess Detector">
         <exec executable="phpmd" passthru="true">
             <arg path="${project.basedir}" />
             <arg value="xml" />

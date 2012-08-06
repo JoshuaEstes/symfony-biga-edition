@@ -1,4 +1,7 @@
 <project>
+    <!--
+         https://github.com/sebastianbergmann/phploc/
+    -->
     <target name="phploc" description="Run phploc on your code">
         <exec executable="phploc" passthru="true">
             <arg value="--log-csv" />
@@ -8,11 +11,12 @@
             <arg value="--exclude" />
             <arg value="${project.basedir}/app/log" />
             <arg value="--exclude" />
+            <arg value="${project.build_dir}" />
+            <arg value="--exclude" />
             <arg value="${project.basedir}/vendor" />
             <arg value="--exclude" />
             <arg value="${project.basedir}/web/bundles" />
             <arg value="${project.basedir}" />
         </exec>
-        <echo message="${out}" />
     </target>
 </project>
