@@ -45,6 +45,11 @@ Installation
     cd /path/to/installation
     php app/console init:project
 
+Updating
+========
+
+    composer.phar update joshuaestes/biga-framework-bundle
+
 Build
 =====
 
