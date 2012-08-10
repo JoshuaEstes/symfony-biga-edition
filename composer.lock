@@ -94,8 +94,8 @@
         {
             "package": "joshuaestes/biga-framework-bundle",
             "version": "dev-master",
-            "source-reference": "97d3adc3df13966721d11dd18659ac4239d9fc5b",
-            "commit-date": "1344620025"
+            "source-reference": "5735241d870cbc9dac5322b255f30ee02a82a0aa",
+            "commit-date": "1344623818"
         },
         {
             "package": "kriswallsmith/assetic",
