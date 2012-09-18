@@ -13,9 +13,9 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.1.*",
-        "doctrine/orm": ">=2.2.3,<2.4-dev",
-        "doctrine/doctrine-bundle": "dev-master",
-        "twig/extensions": "dev-master",
+        "doctrine/orm": "2.3.*",
+        "doctrine/doctrine-bundle": "1.0.x-dev",
+        "twig/extensions": "1.0.x-dev",
         "symfony/assetic-bundle": "2.1.x-dev",
         "symfony/swiftmailer-bundle": "2.1.x-dev",
         "symfony/monolog-bundle": "2.1.x-dev",
