@@ -16,17 +16,20 @@
         "doctrine/orm": ">=2.2.3,<2.4-dev",
         "doctrine/doctrine-bundle": "dev-master",
         "twig/extensions": "dev-master",
-        "symfony/assetic-bundle": "dev-master",
-        "symfony/swiftmailer-bundle": "dev-master",
-        "symfony/monolog-bundle": "dev-master",
-        "sensio/distribution-bundle": "dev-master",
-        "sensio/framework-extra-bundle": "dev-master",
-        "sensio/generator-bundle": "dev-master",
+        "symfony/assetic-bundle": "2.1.x-dev",
+        "symfony/swiftmailer-bundle": "2.1.x-dev",
+        "symfony/monolog-bundle": "2.1.x-dev",
+        "sensio/distribution-bundle": "2.1.*",
+        "sensio/framework-extra-bundle": "2.1.*",
+        "sensio/generator-bundle": "2.1.x-dev",
         "jms/security-extra-bundle": "1.2.*",
         "jms/di-extra-bundle": "1.1.*",
         "joshuaestes/biga-framework-bundle": "dev-master",
         "doctrine/doctrine-migrations-bundle": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
