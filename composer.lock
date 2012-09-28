@@ -1,5 +1,5 @@
 {
-    "hash": "43c13a30b694c8d2536c399e487e99c0",
+    "hash": "14896b07a320edc3852e73b70cbff0d3",
     "packages": [
         {
             "name": "doctrine/common",
@@ -714,21 +714,23 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/JoshuaEstes/biga-framework-bundle.git",
-                "reference": "26f4ae2ce02b8fd3d85df2e0b57327e9c24a8da6"
+                "reference": "4e40cab255b31b06cabd3d298b939d39c0135e2b"
             },
             "require": {
-                "php": ">=5.3.3",
-                "symfony/framework-bundle": "2.1.*"
+                "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/console": "dev-master",
-                "symfony/locale": "dev-master",
-                "symfony/process": "dev-master",
-                "sensio/generator-bundle": "dev-master",
+                "phpunit/phpunit": "*",
+                "symfony/symfony": "2.2.*",
                 "mikey179/vfsstream": "dev-master"
             },
-            "time": "1346653232",
+            "time": "1348865029",
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
             "installation-source": "source",
             "autoload": {
                 "psr-0": {
@@ -1441,12 +1443,6 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "doctrine/doctrine-bundle": 20,
-        "twig/extensions": 20,
-        "symfony/assetic-bundle": 20,
-        "symfony/swiftmailer-bundle": 20,
-        "symfony/monolog-bundle": 20,
-        "sensio/generator-bundle": 20,
         "joshuaestes/biga-framework-bundle": 20,
         "doctrine/doctrine-migrations-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
