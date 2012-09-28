@@ -4,12 +4,6 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git://github.com/JoshuaEstes/biga-framework-bundle.git"
-        }
-    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.*",
