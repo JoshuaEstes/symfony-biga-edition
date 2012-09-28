@@ -1,7 +1,8 @@
 <?php
 
 use Symfony\Component\ClassLoader\ApcClassLoader;
-use Symfony\Component\HttpFoundation\Request;
+//use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\ApacheRequest;
 
 umask(0000);
 
@@ -13,12 +14,11 @@ $loader = new ApcClassLoader('SymfonyBigaEdition', $loader);
 $loader->register(true);
 
 require_once __DIR__.'/../app/AppKernel.php';
-require_once __DIR__.'/../app/AppCache.php';
+//require_once __DIR__.'/../app/AppCache.php';
 
 $kernel = new AppKernel('prod', false);
 $kernel->loadClassCache();
-$kernel   = new AppCache($kernel);
-$request  = Request::createFromGlobals();
-$response = $kernel->handle($request);
+//$kernel   = new AppCache($kernel);
+$response = $kernel->handle(Request::createFromGlobals());
 $response->send();
 $kernel->terminate($request, $response);

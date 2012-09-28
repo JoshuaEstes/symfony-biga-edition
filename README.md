@@ -1,4 +1,4 @@
-Symfony Biga Edition
+[[Symfony]] Biga Edition
 ====================
 
 The Symfony2 Biga distribution contains the basis for any developer to get up

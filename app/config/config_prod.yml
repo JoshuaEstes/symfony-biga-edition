@@ -1,6 +1,10 @@
 imports:
     - { resource: config.yml }
 
+parameters:
+    router.options.matcher.cache_class: ~
+    router.options.matcher_class: Symfony\Component\Routing\Matcher\ApacheUrlMatcher
+
 doctrine:
     orm:
         entity_managers:
