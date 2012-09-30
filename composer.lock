@@ -1292,12 +1292,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony/symfony.git",
-                "reference": "dda2f7cdb3ca084b3a13d28b61f8b54fdeb3f543"
+                "reference": "264a5ccc0c3907a46e771f41db5e56da9a0f3549"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/symfony/zipball/dda2f7cdb3ca084b3a13d28b61f8b54fdeb3f543",
-                "reference": "dda2f7cdb3ca084b3a13d28b61f8b54fdeb3f543",
+                "url": "https://github.com/symfony/symfony/zipball/264a5ccc0c3907a46e771f41db5e56da9a0f3549",
+                "reference": "264a5ccc0c3907a46e771f41db5e56da9a0f3549",
                 "shasum": ""
             },
             "require": {
@@ -1349,7 +1349,7 @@
             "suggest": {
                 "doctrine/data-fixtures": "1.0.*"
             },
-            "time": "1348937500",
+            "time": "1348954387",
             "type": "library",
             "extra": {
                 "branch-alias": {
