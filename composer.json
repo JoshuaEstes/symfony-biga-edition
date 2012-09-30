@@ -1,6 +1,28 @@
 {
     "name": "joshuaestes/symfony-biga-edition",
+    "type": "symfony-distribution",
     "description": "The \"Symfony Biga Edition\" distribution",
+    "keywords": ["biga","symfony2","framework","distribution"],
+    "homepage": "https://github.com/JoshuaEstes/symfony-biga-edition",
+    "license": "MIT",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.2.x-dev"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joshua Estes",
+            "email": "Joshua.Estes@ScenicCityLabs.com",
+            "homepage": "http://joshuaestes.me",
+            "role": "Lead Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/JoshuaEstes/symfony-biga-edition/issues",
+        "wiki": "https://github.com/JoshuaEstes/symfony-biga-edition/wiki",
+        "source": "https://github.com/JoshuaEstes/symfony-biga-edition"
+    },
     "autoload": {
         "psr-0": { "": "src/" }
     },
@@ -24,7 +46,7 @@
         "doctrine/doctrine-fixtures-bundle": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "dev-master"
+        "phpunit/phpunit": "*"
     },
     "scripts": {
         "post-install-cmd": [
