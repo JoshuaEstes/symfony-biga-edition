@@ -13,6 +13,6 @@ require_once __DIR__.'/../app/AppKernel.php';
 
 $kernel = new AppKernel('prod', false);
 $kernel->loadClassCache();
-$response = $kernel->handle(ApacheRequest::createFromGlobals());
+$response = $kernel->handle($request = ApacheRequest::createFromGlobals());
 $response->send();
 $kernel->terminate($request, $response);
